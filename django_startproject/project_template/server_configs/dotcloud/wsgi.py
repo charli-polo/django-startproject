@@ -1,12 +1,12 @@
 import os, sys
 import site
 
-site.addsitedir('/opt/webapps/necro/lib/python2.5/site-packages')
+site.addsitedir('/opt/webapps/myproject/lib/python2.5/site-packages')
 
 
 sys.stdout = sys.stderr
 
-os.environ['DJANGO_SETTINGS_MODULE'] = 'necro.conf.local.settings'
+os.environ['DJANGO_SETTINGS_MODULE'] = 'myproject.conf.local.settings'
 
 import django.core.handlers.wsgi
 
