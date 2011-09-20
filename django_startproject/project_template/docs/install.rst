@@ -36,10 +36,7 @@ We install the dependancies
 FAUT IL INSTALLER LE PACKAGE POUR UTILSER manage.py ?
 Ou cela a-t-il des effets nefastes (genre le truc dans le egg) ?
 	
-We copy the required files:
-	local (from example if needed) -- A CREUSER...
-	cd PROJECT
-	cp conf/local/example/* conf/local/
+
 	
 And now we can run !	
 	bin/manage.py syncdb --migrate

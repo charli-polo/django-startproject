@@ -1,0 +1,5 @@
+#!/bin/sh
+python PROJECT/bin/manage.py syncdb --noinput --migrate --settings="PROJECT.conf.dotcloud.settings"
+# python mkadmin.py
+mkdir -p /home/dotcloud/data/media /home/dotcloud/data/static
+python PROJECT/bin/manage.py collectstatic --noinput --settings="PROJECT.conf.dotcloud.settings"
