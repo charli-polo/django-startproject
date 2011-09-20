@@ -68,7 +68,6 @@ Ajouter la partie git flow !
 Comprendre comment gérer les fichiers de dotcloud (il ne devraient pas être copié en local cf AAA): script post dotcloud ?
 Ajouter un test static (images)
 DEGAGER les .DS_Store ...
-REMETTRE une clé générée de façon aléatoire
 
 SE POSER LA QUESTIN DES CONFS ...
 Objectif: que ce soit versionné (c'est une bonne chose)
