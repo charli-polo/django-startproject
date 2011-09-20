@@ -36,17 +36,20 @@ We install the dependancies
 FAUT IL INSTALLER LE PACKAGE POUR UTILSER manage.py ?
 Ou cela a-t-il des effets nefastes (genre le truc dans le egg) ?
 	
-We copy the required files:
-	local (from example if needed) -- A CREUSER...
-	cd PROJECT
-	cp conf/local/example/* conf/local/
+
 	
 And now we can run !	
 	bin/manage.py syncdb --migrate
 	bin/manage.py runserver
 
-And then we can push
-
+git
+===
+Make initial commmit
+	git init
+	git flow init
+	git add .
+	git commit -a -m 'initial commit'
+	
 
 Deploying the Project
 ======================
@@ -55,27 +58,28 @@ On dotcloud:
 
 Copy dotcloud necessary files (AAA)
 	cp server_configs/dotcloud/* .
+	git add .
+	git commit -a -m 'dotcloud files'
+
+
+
 
 Create an instance and push
+
+
 dotcloud create INSTANCE
 dotcloud push
 
 
 TO DO
 ======================
-Ajouter la partie git... (git init)
-Ajouter la partie git flow !
-Comprendre comment gérer les fichiers de dotcloud (il ne devraient pas être copié en local cf AAA): script post dotcloud ?
-Ajouter un test static (images)
-DEGAGER les .DS_Store ...
-REMETTRE une clé générée de façon aléatoire
-
 SE POSER LA QUESTIN DES CONFS ...
 Objectif: que ce soit versionné (c'est une bonne chose)
 Pb: Sécurité (accès db)
-Pb: Quid lors du dev en local... il faut utiliser dev tout le temps ?
-exemple: bin/manage.py runserver --settings=PROJECT.conf.dev
 
+install de bin/manage.py ?
+ajouter un hook dans le virtualenv (cd)
+ajouter la création de l'user admin dans dotcloud
 
 
 NEXT

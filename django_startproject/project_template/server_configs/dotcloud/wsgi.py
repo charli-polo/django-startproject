@@ -6,7 +6,7 @@ site.addsitedir('/opt/webapps/myproject/lib/python2.5/site-packages')
 
 sys.stdout = sys.stderr
 
-os.environ['DJANGO_SETTINGS_MODULE'] = 'myproject.conf.local.settings'
+os.environ['DJANGO_SETTINGS_MODULE'] = 'myproject.conf.dotcloud.settings'
 
 import django.core.handlers.wsgi
 
