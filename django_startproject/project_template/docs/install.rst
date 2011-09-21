@@ -38,9 +38,7 @@ Ou cela a-t-il des effets nefastes (genre le truc dans le egg) ?
 	
 
 	
-And now we can run !	
-	bin/manage.py syncdb --migrate
-	bin/manage.py runserver
+
 
 git
 ===
@@ -49,7 +47,10 @@ Make initial commmit
 	git flow init
 	git add .
 	git commit -a -m 'initial commit'
-	
+
+And now we can run !	
+	bin/manage.py syncdb --migrate
+	bin/manage.py runserver	
 
 Deploying the Project
 ======================
