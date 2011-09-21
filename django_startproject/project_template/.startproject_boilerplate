@@ -2,3 +2,4 @@ myproject		Project name
 myauthor		Project author
 mydevhost		Development server
 myrepohost		Repository location
+stubb_gitignore		Just a stubb to handle gitignore file

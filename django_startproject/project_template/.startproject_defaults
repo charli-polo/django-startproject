@@ -2,4 +2,4 @@ myproject		PROJECT
 myauthor		Charlie Idrac
 mydevhost		none
 myrepohost		local
-stubb.gitignore	.gitignore
+stubb_gitignore		.gitignore

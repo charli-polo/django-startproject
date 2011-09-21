@@ -5,18 +5,3 @@ uploads
 myproject/conf/local/*.py
 dev.db
 myproject.egg-info
-
-
-######################
-#  conf/local  files #
-######################
-myproject/conf/local/*
-!myproject/conf/local/example
-
-######################
-# OS generated files #
-######################
-.DS_Store?
-ehthumbs.db
-Icon?
-Thumbs.db
