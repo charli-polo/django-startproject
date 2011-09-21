@@ -1,4 +1,4 @@
-from PROJECT.conf.settings import *
+from myproject.conf.settings import *
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
