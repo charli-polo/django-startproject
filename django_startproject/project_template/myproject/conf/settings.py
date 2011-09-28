@@ -82,5 +82,6 @@ INSTALLED_APPS = (
     'django.contrib.humanize',
     'django.contrib.staticfiles',
     'south',
-    'myproject.apps.fresh_start',
+    # 'myproject.apps.fresh_start',
+    'myproject.apps.fresh_start_mag',
 )
