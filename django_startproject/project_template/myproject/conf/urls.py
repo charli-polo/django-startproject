@@ -6,14 +6,18 @@ urlpatterns = patterns('',
     # (r'^$', TemplateView.as_view(template_name="fresh_start/start.html")),
 )
 
-urlpatterns += patterns('daddy.apps.fresh_start.views',
-    (r'^$', 'index'),
-	(r'^login/$', 'login'),
-	(r'^signup/$', 'signup'),
-	(r'^features/$', 'features'),
-	(r'^learn/$', 'learn'),	
-	(r'^plans/$', 'signup'),
-	(r'^pricing/$', 'signup'),
-	(r'^faqs/$', 'faqs'),
-	(r'^support/$', 'support'),
-)
+# app_name = 'fresh_start'
+app_name = 'fresh_start_mag'
+app = 'myproject.apps.%s' % app_name
+
+urlpatterns += patterns('',
+    (r'', include('%s.urls' % app )),
+	# (r'^login/$', 'login'),
+	#  (r'^signup/$', 'signup'),
+	#  (r'^features/$', 'features'),
+	#  (r'^learn/$', 'learn'), 
+	#  (r'^plans/$', 'signup'),
+	#  (r'^pricing/$', 'signup'),
+	#  (r'^faqs/$', 'faqs'),
+	#  (r'^support/$', 'support'),
+	)
