@@ -30,7 +30,6 @@ We run the start-project to start a project (in the desired location)
 	django-startproject.py Project_Root
 
 We install the dependancies
-	cd Project_Root
 	pip install -r requirements.txt
 
 FAUT IL INSTALLER LE PACKAGE POUR UTILSER manage.py ?
@@ -43,6 +42,7 @@ Ou cela a-t-il des effets nefastes (genre le truc dans le egg) ?
 git
 ===
 Make initial commmit
+	cd PROJECT_ROOT
 	git init
 	git flow init
 	git add .
