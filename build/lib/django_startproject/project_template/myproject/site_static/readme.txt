@@ -1,1 +1,0 @@
-This directory is made to contain files used globally by the site (if any)
