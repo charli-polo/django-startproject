@@ -5,3 +5,10 @@ uploads
 myproject/conf/local/*.py
 dev.db
 myproject.egg-info
+
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
